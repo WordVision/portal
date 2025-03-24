@@ -1,12 +1,40 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="bg-white text-gray-900 scroll-smooth">
+      {/* Navbar */}
+      <nav className="fixed top-0 w-full bg-white shadow z-50 px-6 py-4 flex justify-between items-center">
+        <span className="text-xl font-bold">WordVision</span>
+        <ul className="flex gap-6 text-sm font-medium">
+          <li>
+            <a href="#hero" className="hover:text-indigo-600">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-indigo-600">
+              What
+            </a>
+          </li>
+          <li>
+            <a href="#how" className="hover:text-indigo-600">
+              How
+            </a>
+          </li>
+          <li>
+            <a href="#download" className="hover:text-indigo-600">
+              Download
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       {/* Hero Section */}
-      <section className="text-center py-20 px-4 bg-gradient-to-br from-indigo-100 to-white">
+      <section
+        id="hero"
+        className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-indigo-100 to-white pt-20"
+      >
         <h1 className="text-5xl font-bold mb-4">WordVision</h1>
-        <p className="text-xl max-w-xl mx-auto mb-6">
+        <p className="text-xl max-w-xl mb-6">
           Turn book passages into stunning AI-generated imagery. Read, imagine,
           and experience.
         </p>
@@ -29,7 +57,10 @@ export default function Home() {
       </section>
 
       {/* What is WordVision */}
-      <section className="py-16 px-6 max-w-4xl mx-auto">
+      <section
+        id="about"
+        className="min-h-screen flex flex-col justify-center px-6 max-w-4xl mx-auto pt-20"
+      >
         <h2 className="text-3xl font-semibold mb-4">What is WordVision?</h2>
         <p className="text-lg">
           WordVision is an AI-powered companion app for book lovers. It helps
@@ -41,7 +72,10 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="bg-gray-100 py-16 px-6">
+      <section
+        id="how"
+        className="min-h-screen bg-gray-100 flex flex-col justify-center px-6 pt-20"
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8 text-center">
             How it works
@@ -64,7 +98,10 @@ export default function Home() {
       </section>
 
       {/* Download CTA */}
-      <section className="py-16 px-6 text-center">
+      <section
+        id="download"
+        className="min-h-screen flex flex-col justify-center items-center px-6 text-center pt-20"
+      >
         <h2 className="text-3xl font-semibold mb-4">Download WordVision</h2>
         <p className="text-lg mb-6">
           Get the app now and bring your books to life.
