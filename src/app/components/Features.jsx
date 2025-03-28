@@ -23,11 +23,15 @@ export default function Features() {
     },
   ];
   return (
-    <section id="what" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="what" className="py-20 bg-[#578ca4]">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-12 text-gray-900 dark:text-white">
           How WordVision Works
         </h2>
+        <h3 className=" font-semibold text-center mb-12 text-gray-900 dark:text-white">
+          Transform book passages into stunning AI-generated imagery. Read,
+          imagine, and experience literature like never before.
+        </h3>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
