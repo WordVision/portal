@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Buttons from "./Buttons";
 
 export default function Download() {
   return (
@@ -14,32 +14,8 @@ export default function Download() {
         Download WordVision and start transforming your reading experience
         today.
       </p>
-      <div className="flex space-x-4">
-        <a
-          href="https://apps.apple.com/app/wordvision"
-          target="_blank"
-          className="hover:opacity-80 transition-opacity"
-        >
-          <Image
-            src="/buttons/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg"
-            alt="Download on the App Store"
-            width={200}
-            height={60}
-            className="dark:invert"
-          />
-        </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.wordvision"
-          target="_blank"
-          className="hover:opacity-80 transition-opacity"
-        >
-          <Image
-            src="/buttons/GetItOnGooglePlay_Badge_Web_color_English.png"
-            alt="Get it on Google Play"
-            width={200}
-            height={60}
-          />
-        </a>
+      <div className=" space-x-4">
+        <Buttons />
       </div>
     </section>
   );

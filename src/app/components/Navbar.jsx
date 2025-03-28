@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +8,12 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow z-50 px-4 lg:px-8 py-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <span className="text-2xl font-bold text-indigo-600">WordVision</span>
+          <Image
+            src="/WordVision_logo.png"
+            width={75}
+            height={22}
+            className="rounded-md"
+          />
         </div>
 
         {/* Mobile Menu Toggle */}
