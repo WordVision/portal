@@ -10,8 +10,12 @@ export default function Hero() {
     >
       <div className="max-w-2xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
-          WordVision
+          <span className="highlight-cursor">
+            WordVision
+            <span className="moving-cursor"></span>
+          </span>
         </h1>
+
         <p className="text-xl max-w-xl mx-auto mb-8 text-gray-600 dark:text-gray-300">
           Explore and dive into your favorite books and see the story just as
           you always wanted to.

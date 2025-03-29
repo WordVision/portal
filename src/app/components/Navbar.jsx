@@ -12,6 +12,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Image
+            alt="logo"
             src="/WordVision_logo.png"
             width={75}
             height={22}
